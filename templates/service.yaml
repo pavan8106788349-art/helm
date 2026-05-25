@@ -1,14 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-headless
+  name: nginx
 spec:
-  type: {{ .Values.service.type }}
-  selector:
-    # labels are used as selectors
-    project: roboshop
-    component: frontend
+  type: {{ .Values.service.type | default "ClusterIP" }}
   ports:
-  - protocol: TCP
-    port: 80 # servie port
-    targetPort: 80 # container port
+    - port: {{ .Values.service.port | default 80 }}
+      targetPort: 80
+  selector:
+    app: nginx
