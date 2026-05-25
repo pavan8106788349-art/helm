@@ -1,4 +1,4 @@
 apiVersion: v2 # This is k8s related
 name: nginx
-version: 0.0.1 # This is chart version
-appVersion: latest # This is application version like catalogue version
+version: 0.0.2 # This is chart version
+appVersion: l.29.8 # This is application version like catalogue version
