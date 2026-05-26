@@ -3,5 +3,5 @@ deployment:
   changecause: "installing 1.29-trixie version"
   imageversion: "l.29-trixie"
 service:
-  type: LoadBalancer
+  type: ClusterIP
   port: 80
