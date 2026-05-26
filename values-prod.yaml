@@ -1,3 +1,6 @@
 deployment:
-  replicas: "4"
-  imageVersion: "1.28"
+  replicas: 1
+
+service:
+  type: ClusterIP
+  port: 80

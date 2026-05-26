@@ -1,7 +1,6 @@
 deployment:
   replicas: 1
-  changecause: "installing 1.29-trixie version"
-  imageversion: "l.29-trixie"
+
 service:
   type: ClusterIP
   port: 80
