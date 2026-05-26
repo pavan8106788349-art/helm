@@ -4,4 +4,4 @@ deployment:
   imageversion: "l.29-trixie"
 service:
   type: LoadBalancer
-  
+  port: 80
