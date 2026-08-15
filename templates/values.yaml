@@ -4,8 +4,5 @@ deployment:
   imageVersion: "latest"
 service:
   type: LoadBalancer
-deployment:
-  changeCause: "Initial deployment"
-  replicas: 2
-  imageVersion: "1.27"
+
 
