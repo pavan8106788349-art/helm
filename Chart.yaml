@@ -1,5 +1,4 @@
-apiVersion: v2 # This is k8s related
+apiVersion: v2 
 name: nginx
-version: 0.0.3 # This is chart version
-appVersion: l.29-trixie # This is application version like catalogue version
-description: "upgrading to 1.29-trixie"
+version: 0.0.1 # This is chart version
+appVersion: latest # This is application version like catalogue version
