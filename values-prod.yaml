@@ -1,6 +1,2 @@
 deployment:
-  replicas: 1
-
-service:
-  type: ClusterIP
-  port: 80
+  replicas: 4

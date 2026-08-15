@@ -1,5 +1,4 @@
 deployment:
-  replicas: "1"
   changecause: "installing l.29-trixie version"
   imageVersion: "1.29-trixie"
 service:
