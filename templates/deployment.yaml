@@ -1,3 +1,6 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
   name: nginx
   # these labels are replicaset labels
   labels:
@@ -7,7 +10,7 @@
     component: frontend
   annotations:
     kubernetes.io/change-cause: {{ .Values.deployment.changeCause }}
-  spec:
+spec:
   replicas: {{ .Values.deployment.replicas }}
   selector:
     # using these labels replica set selects the pod
@@ -27,7 +30,7 @@
     spec:
       containers:
       - name: nginx
-        image: nginx:{{ .Values.deployment.imageVersion }}
+        image: nginx:{{ .Values.deployment.imageVersion }
   
 
 
